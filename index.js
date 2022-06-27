@@ -2,9 +2,8 @@ const express = require('express');
 const PgPromise = require("pg-promise");
 // const bodyParser = require('body-parser');
 const cors = require('cors');
-const bcrypt = require('bcrypt');
 require('dotenv').config();
-const API = require('./api');
+// const API = require('./api');
 
 const app = express();
 
@@ -23,9 +22,9 @@ const config = {
 };
 
 const pgp = PgPromise({});
-const db = pgp(config);
+// const db = pgp(config);
 
-API(app, db);
+// API(app, db);
 
 let port = process.env.port || 3002;
 
